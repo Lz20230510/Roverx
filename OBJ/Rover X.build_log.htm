@@ -1,0 +1,681 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: LI 8618825413985, LI, LIC=X96CK-ZG8ED-DYWV3-ABGJG-BQK6Z-730WK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.35.0.2
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+E:\workstation\云擎\Rover X\Rover x V4.0\USER\FreeRTOS.uvprojx
+Project File Date:  05/18/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'FreeRTOS'
+Note: source file '..\CANOPEN\src\timer.c' - object file renamed from '..\OBJ\timer.o' to '..\OBJ\timer_1.o'.
+Note: source file '..\LWIP\lwip-1.4.1\src\core\timers.c' - object file renamed from '..\OBJ\timers.o' to '..\OBJ\timers_1.o'.
+compiling myiic.c...
+compiling stm32f4xx_it.c...
+compiling 24cxx.c...
+compiling system_stm32f4xx.c...
+compiling I_O.c...
+compiling lan8720.c...
+compiling HEAD.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\HEAD\HEAD.c: 6 warnings, 0 errors
+compiling main.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\usart6\usart6.h(58): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 32 of "..\HARDWARE\USART3\usart3.h")
+  #define CMD_MAX_SIZE 30        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+main.c(49): warning:  #223-D: function "usart2_init" declared implicitly
+    usart2_init(9600,1,1);                          //蓝牙
+main.c(43): warning:  #177-D: variable "res"  was declared but never referenced
+  { u8 res;
+main.c: 8 warnings, 0 errors
+compiling Motor.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\Motor\Motor.c: 6 warnings, 0 errors
+compiling FreeRTOSDef.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\FreeRTOSDef\FreeRTOSDef.c(133): warning:  #68-D: integer conversion resulted in a change of sign
+  		TIM_SetCompare4(TIM4,5000-Median); 		//舵机回中
+..\HARDWARE\FreeRTOSDef\FreeRTOSDef.c: 7 warnings, 0 errors
+compiling usart4.c...
+..\HARDWARE\USART4\usart4.c(726): warning:  #1-D: last line of file ends without a newline
+  ////}
+..\HARDWARE\USART4\usart4.c: 1 warning, 0 errors
+compiling 24l01.c...
+..\HARDWARE\I_O\I_O.h(105): warning:  #47-D: incompatible redefinition of macro "LED1"  (declared at line 21 of "..\HARDWARE\LED\led.h")
+  #define LED1 PFout(11)	// DS1 核心板
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\NRF24L01\24l01.c(385): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if(spd_cle[0]>1.0)																//当数据大于1.0米/秒  可以累减
+..\HARDWARE\NRF24L01\24l01.c: 8 warnings, 0 errors
+compiling spi.c...
+compiling timer1.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\TIMER1\timer1.c: 6 warnings, 0 errors
+compiling timer.c...
+..\HARDWARE\I_O\I_O.h(105): warning:  #47-D: incompatible redefinition of macro "LED1"  (declared at line 21 of "..\HARDWARE\LED\led.h")
+  #define LED1 PFout(11)	// DS1 核心板
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\TIMER\timer.c: 7 warnings, 0 errors
+compiling usart3.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\USART3\usart3.c(104): warning:  #223-D: function "TIM7_Int_Init" declared implicitly
+  	TIM7_Int_Init(1000-1,8400-1);		//100ms中断
+..\HARDWARE\USART3\usart3.c: 7 warnings, 0 errors
+compiling RAD.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\RAD\RAD.c: 6 warnings, 0 errors
+compiling pwm.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\PWM\pwm.c(289): warning:  #177-D: variable "Left"  was declared but never referenced
+  	u32 Left,Right;
+..\HARDWARE\PWM\pwm.c(289): warning:  #177-D: variable "Right"  was declared but never referenced
+  	u32 Left,Right;
+..\HARDWARE\PWM\pwm.c(336): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pwmOut=(u32)(11.1111*angle+500);
+..\HARDWARE\PWM\pwm.c(395): warning:  #550-D: variable "temp"  was set but never used
+  	u16 static temp[4]={0,0,0,0};
+..\HARDWARE\PWM\pwm.c(656): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\PWM\pwm.c: 11 warnings, 0 errors
+assembling startup_stm32f40_41xxx.s...
+compiling sys.c...
+compiling delay.c...
+compiling vehicle.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\Vehicle\vehicle.c(125): warning:  #177-D: variable "angleH"  was declared but never referenced
+  	float angleH; 		//角度弧度
+..\HARDWARE\Vehicle\vehicle.c(128): warning:  #177-D: variable "Length2"  was declared but never referenced
+  	float temp,Length1,Length2,LengthL,LengthR,LengthM,angle2,tan1;				//临时
+..\HARDWARE\Vehicle\vehicle.c(128): warning:  #177-D: variable "angle2"  was declared but never referenced
+  	float temp,Length1,Length2,LengthL,LengthR,LengthM,angle2,tan1;				//临时
+..\HARDWARE\Vehicle\vehicle.c(130): warning:  #177-D: variable "lengthL"  was declared but never referenced
+  	float lengthL,lengthM,lengthR;
+..\HARDWARE\Vehicle\vehicle.c(130): warning:  #177-D: variable "lengthM"  was declared but never referenced
+  	float lengthL,lengthM,lengthR;
+..\HARDWARE\Vehicle\vehicle.c(130): warning:  #177-D: variable "lengthR"  was declared but never referenced
+  	float lengthL,lengthM,lengthR;
+..\HARDWARE\Vehicle\vehicle.c(193): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(float_abs(spd/angleSpd)<=Min_Turn_Radius)
+..\HARDWARE\Vehicle\vehicle.c(198): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				spdTemp1= float_abs(spd)/(Min_Turn_Radius);
+..\HARDWARE\Vehicle\vehicle.c(200): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				spdTemp1=-float_abs(spd)/(Min_Turn_Radius);		
+..\HARDWARE\Vehicle\vehicle.c(208): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			vehiclePar.AngleDu=atan(Vehicle_L/R)+pi/2;			//前中心点打角
+..\HARDWARE\Vehicle\vehicle.c(215): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			vehiclePar.AngleDu=atan(float_abs(R)/Vehicle_L);			//前中心点打角
+..\HARDWARE\Vehicle\vehicle.c(240): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	vehiclePar.PwmWheel=Direction_Control(1,vehiclePar.AngleDu*180/pi,15);   //舵机PWM输出
+..\HARDWARE\Vehicle\vehicle.c: 18 warnings, 0 errors
+compiling usart6.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\usart6\usart6.h(58): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 32 of "..\HARDWARE\USART3\usart3.h")
+  #define CMD_MAX_SIZE 30        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\usart6\usart6.c(200): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Send_Data.Sensor_Str.Z_speed = (MotorMsg[1].RdSpd-MotorMsg[0].RdSpd)/MotorMsg[0].Ratio/Vehicle_W * 1000;//小车z轴速度
+..\HARDWARE\usart6\usart6.c(427): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\usart6\usart6.c: 8 warnings, 0 errors
+compiling mpu9250.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\MPU9250\mpu9250.c(218): warning:  #111-D: statement is unreachable
+  Smc345.scm345Angle =bcd_to_hex((unsigned char*) magnetometer[3]);  //磁力计数据赋值    强制转换  
+..\HARDWARE\MPU9250\mpu9250.c(330): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\MPU9250\mpu9250.c: 8 warnings, 0 errors
+compiling usart2.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\USART2\usart2.c(139): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(Res==0x58 && VehicleSpd<=0.5) VehicleSpd=VehicleSpd+0.1;
+..\HARDWARE\USART2\usart2.c(139): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(Res==0x58 && VehicleSpd<=0.5) VehicleSpd=VehicleSpd+0.1;
+..\HARDWARE\USART2\usart2.c(140): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(Res==0x59 && VehicleSpd>=0.0) VehicleSpd=VehicleSpd-0.1;
+..\HARDWARE\USART2\usart2.c(140): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(Res==0x59 && VehicleSpd>=0.0) VehicleSpd=VehicleSpd-0.1;
+..\HARDWARE\USART2\usart2.c(187): warning:  #111-D: statement is unreachable
+  		}break;			
+..\HARDWARE\USART2\usart2.c(194): warning:  #111-D: statement is unreachable
+  		}break;			
+..\HARDWARE\USART2\usart2.c(201): warning:  #111-D: statement is unreachable
+  		}break;			
+..\HARDWARE\USART2\usart2.c(208): warning:  #111-D: statement is unreachable
+  		}break;			
+..\HARDWARE\USART2\usart2.c(215): warning:  #111-D: statement is unreachable
+  		}break;			
+..\HARDWARE\USART2\usart2.c(222): warning:  #111-D: statement is unreachable
+  		}break;			
+..\HARDWARE\USART2\usart2.c(229): warning:  #111-D: statement is unreachable
+  		}break;			
+..\HARDWARE\USART2\usart2.c(236): warning:  #111-D: statement is unreachable
+  		}break;			
+..\HARDWARE\USART2\usart2.c(241): warning:  #111-D: statement is unreachable
+  		}break;			
+..\HARDWARE\USART2\usart2.c(246): warning:  #111-D: statement is unreachable
+  		}break;			
+..\HARDWARE\USART2\usart2.c(251): warning:  #111-D: statement is unreachable
+  		}break;	
+..\HARDWARE\USART2\usart2.c(257): warning:  #111-D: statement is unreachable
+  		}break;	
+..\HARDWARE\USART2\usart2.c(263): warning:  #111-D: statement is unreachable
+  		}break;				
+..\HARDWARE\USART2\usart2.c(726): warning:  #1-D: last line of file ends without a newline
+  //}
+..\HARDWARE\USART2\usart2.c: 24 warnings, 0 errors
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling usart.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\SYSTEM\usart\usart.c(60): warning:  #940-D: missing return statement at end of non-void function "_sys_exit" 
+  } 
+..\SYSTEM\usart\usart.c(164): warning:  #177-D: variable "lenth"  was declared but never referenced
+  	u16 lenth,char_len;
+..\SYSTEM\usart\usart.c(324): warning:  #177-D: variable "lenth"  was declared but never referenced
+  	u8 lenth,stor[8];//数据长度,逗号位置存储
+..\SYSTEM\usart\usart.c(327): warning:  #177-D: variable "mapPotTemp"  was declared but never referenced
+  	MapPotDef static mapPot,mapPotTemp;
+..\SYSTEM\usart\usart.c: 10 warnings, 0 errors
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4x7_eth.c...
+compiling stm32f4xx_flash.c...
+compiling croutine.c...
+compiling TestMaster.c...
+compiling dcf.c...
+compiling emcy.c...
+compiling list.c...
+compiling event_groups.c...
+compiling nmtMaster.c...
+compiling timers.c...
+compiling lifegrd.c...
+compiling queue.c...
+compiling lss.c...
+compiling nmtSlave.c...
+compiling tasks.c...
+compiling port.c...
+compiling heap_4.c...
+compiling objacces.c...
+compiling states.c...
+compiling sync.c...
+compiling pdo.c...
+compiling timer.c...
+compiling canfestival.c...
+compiling sdo.c...
+compiling cantimer.c...
+compiling malloc.c...
+Error: L6984E: AT section malloc.o(.ARM.__AT_0x10000190) has required base address 0x10000190 which is not aligned to section alignment 0x00000020.
+Finished: 0 information, 0 warning and 1 error messages.
+compiling cancan.c...
+compiling def.c...
+compiling dns.c...
+compiling ethernetif.c...
+compiling udp_demo.c...
+compiling etharp.c...
+compiling dhcp.c...
+compiling lwip_comm.c...
+compiling init.c...
+compiling lwip_sys.c...
+compiling mem.c...
+compiling memp.c...
+compiling stats.c...
+compiling pbuf.c...
+compiling raw.c...
+compiling netif.c...
+compiling tcp.c...
+compiling tcp_in.c...
+compiling tcp_out.c...
+..\LWIP\lwip-1.4.1\src\core\tcp_out.c(845): warning:  #550-D: variable "tcphdr"  was set but never used
+    struct tcp_hdr *tcphdr;
+..\LWIP\lwip-1.4.1\src\core\tcp_out.c(1367): warning:  #550-D: variable "tcphdr"  was set but never used
+    struct tcp_hdr *tcphdr;
+..\LWIP\lwip-1.4.1\src\core\tcp_out.c: 2 warnings, 0 errors
+compiling timers.c...
+compiling autoip.c...
+compiling udp.c...
+compiling icmp.c...
+compiling igmp.c...
+compiling inet.c...
+compiling inet_chksum.c...
+compiling ip.c...
+compiling ip_addr.c...
+compiling ip_frag.c...
+compiling err.c...
+compiling api_lib.c...
+compiling netbuf.c...
+compiling api_msg.c...
+compiling netdb.c...
+compiling netifapi.c...
+compiling tcpip.c...
+compiling sys_arch.c...
+compiling sockets.c...
+compiling map.c...
+compiling AGV_contr.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\AGV_Logic\AGV_contr\AGV_contr.c(324): warning:  #1-D: last line of file ends without a newline
+  }
+..\AGV_Logic\AGV_contr\AGV_contr.c(277): warning:  #550-D: variable "multiType"  was set but never used
+  	union MultiType multiType;
+..\AGV_Logic\AGV_contr\AGV_contr.c: 8 warnings, 0 errors
+compiling BranchPath.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\AGV_Logic\BranchPath\BranchPath.c(11): warning:  #177-D: variable "i"  was declared but never referenced
+  	u8 i;
+..\AGV_Logic\BranchPath\BranchPath.c(360): warning:  #223-D: function "Time7_Timekeep" declared implicitly
+  				Time7_Timekeep(Tim7Add.time[4],Tim7Add.tiAdd,Tim7Add.start[4],4,1);				//Tim7[4]计时器			计时器复位	
+..\AGV_Logic\BranchPath\BranchPath.c(331): warning:  #550-D: variable "cardValueStor"  was set but never used
+  	static u16 cardValueStor;															//上一次存储的RFID卡号
+..\AGV_Logic\BranchPath\BranchPath.c: 9 warnings, 0 errors
+compiling East_nor.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\AGV_Logic\East_nor\East_nor.c: 6 warnings, 0 errors
+compiling magnetic.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\AGV_Logic\magnetic\magnetic.c(51): warning:  #177-D: variable "alls"  was declared but never referenced
+  	u16 all,alls;
+..\AGV_Logic\magnetic\magnetic.c: 7 warnings, 0 errors
+compiling pid.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\AGV_Logic\PID\pid.c(25): warning:  #550-D: parameter "PP"  was set but never used
+  void PID_Init(float K,float I,float D,float taget,PIDtypedef PP)
+..\AGV_Logic\PID\pid.c(96): warning:  #68-D: integer conversion resulted in a change of sign
+  		else pre=-1;												//否则为-1
+..\AGV_Logic\PID\pid.c(102): warning:  #68-D: integer conversion resulted in a change of sign
+  		else next=-1;												//否则为0
+..\AGV_Logic\PID\pid.c(192): warning:  #1-D: last line of file ends without a newline
+  //									
+..\AGV_Logic\PID\pid.c: 10 warnings, 0 errors
+compiling ultrasonic.c...
+..\AGV_Logic\ULTRASONIC\ultrasonic.c(18): warning:  #188-D: enumerated type mixed with another type
+   	GPIO_InitStructure.GPIO_Mode=0x00;//推挽输出
+..\AGV_Logic\ULTRASONIC\ultrasonic.c(23): warning:  #188-D: enumerated type mixed with another type
+   	GPIO_InitStructure.GPIO_Mode = 0x00;//浮空输入
+..\AGV_Logic\ULTRASONIC\ultrasonic.c: 2 warnings, 0 errors
+compiling gps.c...
+..\HARDWARE\I_O\I_O.h(105): warning:  #47-D: incompatible redefinition of macro "LED1"  (declared at line 21 of "..\HARDWARE\LED\led.h")
+  #define LED1 PFout(11)	// DS1 核心板
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\AGV_Logic\GPS\gps.c: 7 warnings, 0 errors
+compiling RFID.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\AGV_Logic\RFID\RFID.c: 6 warnings, 0 errors
+compiling cmd_queue.c...
+compiling StationCardNum.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\AGV_Logic\StationCardNum\StationCardNum.c(18): warning:  #177-D: variable "staCardNum"  was declared but never referenced
+  	static StationCardNumDef staCardNum;			
+..\AGV_Logic\StationCardNum\StationCardNum.c: 7 warnings, 0 errors
+compiling stmflash.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\usart6\usart6.h(58): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 32 of "..\HARDWARE\USART3\usart3.h")
+  #define CMD_MAX_SIZE 30        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\LED\led.h(21): warning:  #47-D: incompatible redefinition of macro "LED1"  (declared at line 105 of "..\HARDWARE\I_O\I_O.h")
+  #define LED1 PFout(12)	// DS1	 
+..\AGV_Logic\stmflash\stmflash.c(746): warning:  #550-D: variable "cardNumStor"  was set but never used
+  	static u8 cardNumStor=0,JogModeStor=0,AutoModeStor=0;
+..\AGV_Logic\stmflash\stmflash.c(1104): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  			sscanf(str,"%u",&multiType1.u8_);//把字符串转换为整数
+..\AGV_Logic\stmflash\stmflash.c(1104): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  			sscanf(str,"%u",&multiType1.u8_);//把字符串转换为整数
+..\AGV_Logic\stmflash\stmflash.c(1111): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  			sscanf(str,"%u",&multiType1.u16_);//把字符串转换为整数
+..\AGV_Logic\stmflash\stmflash.c(1111): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  			sscanf(str,"%u",&multiType1.u16_);//把字符串转换为整数
+..\AGV_Logic\stmflash\stmflash.c(1126): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  			sscanf(str,"%f",&multiType1.float_);//把字符串转换为整数
+..\AGV_Logic\stmflash\stmflash.c(1133): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  			sscanf(str,"%lf",&multiType1.double_);//把字符串转换为整数
+..\AGV_Logic\stmflash\stmflash.c: 14 warnings, 0 errors
+compiling vehicle_key.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\USART3\usart3.h(32): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 58 of "..\HARDWARE\usart6\usart6.h")
+  #define CMD_MAX_SIZE 20        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\AGV_Logic\vehicle_key\vehicle_key.c(73): warning:  #550-D: variable "AJMode_Stor"  was set but never used
+  	u8 static  AJMode_Stor=0;
+..\AGV_Logic\vehicle_key\vehicle_key.c(77): warning:  #550-D: variable "DacaiJOGSetupStor"  was set but never used
+  	u8 static  DacaiJOGSetupStor=0;                 //伺服使能状态循环计数位
+..\AGV_Logic\vehicle_key\vehicle_key.c(78): warning:  #550-D: variable "DacaiAUTOmodeStor"  was set but never used
+  	u8 static  DacaiAUTOmodeStor=0;						//大彩自动模式选择按钮状态存储
+..\AGV_Logic\vehicle_key\vehicle_key.c: 9 warnings, 0 errors
+compiling HMI_cmd.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\usart6\usart6.h(58): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 32 of "..\HARDWARE\USART3\usart3.h")
+  #define CMD_MAX_SIZE 30        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\HARDWARE\LED\led.h(21): warning:  #47-D: incompatible redefinition of macro "LED1"  (declared at line 105 of "..\HARDWARE\I_O\I_O.h")
+  #define LED1 PFout(12)	// DS1	 
+..\DaCai\HMI_cmd\HMI_cmd.c(151): warning:  #111-D: statement is unreachable
+  	if(screen_id==1)
+..\DaCai\HMI_cmd\HMI_cmd.c(22): warning:  #177-D: variable "test_value"  was declared but never referenced
+  static long test_value = 0;//测试值
+..\DaCai\HMI_cmd\HMI_cmd.c: 9 warnings, 0 errors
+compiling hmi_driver.c...
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\usart6\usart6.h(58): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 32 of "..\HARDWARE\USART3\usart3.h")
+  #define CMD_MAX_SIZE 30        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+..\DaCai\HMI_DRIVE\hmi_driver.c: 6 warnings, 0 errors
+"..\OBJ\Rover X.axf" - 1 Error(s), 243 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\Users\86188\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>

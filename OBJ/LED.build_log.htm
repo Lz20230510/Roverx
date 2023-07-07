@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 admin, 1, LIC=32B1Q-NA9EL-EVC1R-K4D40-YPS1A-EJZD2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.35.0.2
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\admin\Desktop\Rover X\Rover x V4.0\USER\FreeRTOS.uvprojx
+Project File Date:  05/11/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'FreeRTOS'
+Note: source file '..\CANOPEN\src\timer.c' - object file renamed from '..\OBJ\timer.o' to '..\OBJ\timer_1.o'.
+Note: source file '..\LWIP\lwip-1.4.1\src\core\timers.c' - object file renamed from '..\OBJ\timers.o' to '..\OBJ\timers_1.o'.
+compiling main.c...
+..\HARDWARE\USART2\usart2.h(53): warning:  #375-D: declaration requires a typedef name
+  };
+..\HARDWARE\usart6\usart6.h(51): warning:  #47-D: incompatible redefinition of macro "uint8"  (declared at line 36 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint8    unsigned char
+..\HARDWARE\usart6\usart6.h(52): warning:  #47-D: incompatible redefinition of macro "uint16"  (declared at line 37 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint16   unsigned short int
+..\HARDWARE\usart6\usart6.h(53): warning:  #47-D: incompatible redefinition of macro "uint32"  (declared at line 38 of "..\CANOPEN\inc\objdictdef.h")
+  #define uint32   unsigned long
+..\HARDWARE\usart6\usart6.h(54): warning:  #47-D: incompatible redefinition of macro "int16"  (declared at line 34 of "..\CANOPEN\inc\objdictdef.h")
+  #define int16    short int
+..\HARDWARE\usart6\usart6.h(55): warning:  #47-D: incompatible redefinition of macro "int32"  (declared at line 35 of "..\CANOPEN\inc\objdictdef.h")
+  #define int32    long
+..\HARDWARE\usart6\usart6.h(58): warning:  #47-D: incompatible redefinition of macro "CMD_MAX_SIZE"  (declared at line 32 of "..\HARDWARE\USART3\usart3.h")
+  #define CMD_MAX_SIZE 30        /*!<单条指令大小，根据需要调整，尽量设置大一些*/
+main.c(49): warning:  #223-D: function "usart2_init" declared implicitly
+    usart2_init(9600,1,1);                          //蓝牙
+main.c(43): warning:  #177-D: variable "res"  was declared but never referenced
+  { u8 res;
+main.c: 9 warnings, 0 errors
+linking...
+..\OBJ\LED.axf: Error: L6406E: No space in execution regions with .ANY selector matching malloc.o(.bss).
+..\OBJ\LED.axf: Error: L6407E: Sections of aggregate size 0x96000 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+"..\OBJ\LED.axf" - 2 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\admin\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
